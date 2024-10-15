@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header .logo{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header .logo span{
+    color: black;
+}
+
+ header .menu{
+    display: flex;
+    flex-direction: row;
+}
+
+header .menu li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+header .menu li a{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+header .menu li a:hover{
+    color: red;
+}
+
+header button{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-weight: 500;
+    border-radius: 10px;
+}
