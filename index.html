@@ -1,28 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Luxe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/fontawesome/css/all.min.css"
+    />
+  <body>
     <!-- header -->
     <header>
-        <div class="logo">
-            <p><span>Luxe</span>Cars</p>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="">Acceuil</a></li>
-                <li><a href="">Véhicules</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <button type="button" class="login_btn">
-            Login
-        </button>
+      <div class="logo">
+        <p><span>Luxe</span>Cars</p>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="">Acceuil</a></li>
+          <li><a href="">Véhicules</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="login_btn">Login</button>
     </header>
-</body>
+
+    <!-- Section Acceuil -->
+    <section class="home">
+      <div class="left">
+        <h1>Buy <span>Your Cars</span> Cheaper From Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ipsa?
+          Aliquid debitis tempore inventore non fuga libero laudantium, hic
+          neque iusto tempora. Harum eligendi in repellat nulla consequatur
+          saepe ullam.
+        </p>
+        <a href="#">BUY NOW</a>
+      </div>
+      <div class="right">
+        <img src="./images/img1.png" alt="Car" />
+      </div>
+    </section>
+
+    <!-- Section vehicule -->
+    <section id="cars">
+      <h1 class="section_title">Nos vehicules</h1>
+      <div class="images">
+        <ul>
+          <li class="car">
+            <div><img src="./images/car1.jpg" alt="car1" /></div>
+            <span>LAMBORGHINI</span>
+            <span class="prix">300 000XAF</span>
+            <a href="#">ACHETER MAINTENANT</a>
+          </li>
+          <li class="car">
+            <div><img src="./images/car2.jpg" alt="car2" /></div>
+            <span>LAMBORGHINI</span>
+            <span class="prix">300 000XAF</span>
+            <a href="#">ACHETER MAINTENANT</a>
+          </li>
+          <li class="car">
+            <div><img src="./images/car3.jpg" alt="car3" /></div>
+            <span>LAMBORGHINI</span>
+            <span class="prix">300 000XAF</span>
+            <a href="#">ACHETER MAINTENANT</a>
+          </li>
+          <li class="car">
+            <div><img src="./images/car4.jpg" alt="car4" /></div>
+            <span>LAMBORGHINI</span>
+            <span class="prix">300 000XAF</span>
+            <a href="#">ACHETER MAINTENANT</a>
+          </li>
+          <li class="car">
+            <div><img src="./images/car5.jpg" alt="car5" /></div>
+            <span>LAMBORGHINI</span>
+            <span class="prix">300 000XAF</span>
+            <a href="#">ACHETER MAINTENANT</a>
+          </li>
+          <li class="car">
+            <div><img src="./images/car6.jpg" alt="car6" /></div>
+            <span>LAMBORGHINI</span>
+            <span class="prix">300 000XAF</span>
+            <a href="#">ACHETER MAINTENANT</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section service -->
+    <section id="services">
+      <h1 class="section_title">Nos Services</h1>
+      <div class="list_services">
+        <div class="service">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Dépannage</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            velit repellendus eveniet cumque quam.
+          </p>
+          <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Dépannage</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            velit repellendus eveniet cumque quam.
+          </p>
+          <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Dépannage</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            velit repellendus eveniet cumque quam.
+          </p>
+          <a href="#" class="read_more">Lire Plus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h1 class="section_title">Contactez-Nous</h1>
+      <div class="localisation_contact_div">
+        <div class="localisation"></div>
+      </div>
+      <form action="#">
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre email" required />
+        <textarea placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="social_media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </body>
 </html>
