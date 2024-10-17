@@ -12,6 +12,9 @@
   <body>
     <!-- header -->
     <header>
+      <div class="menu_toggle">
+        <span></span>
+      </div>
       <div class="logo">
         <p><span>Luxe</span>Cars</p>
       </div>
@@ -151,5 +154,18 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </footer>
+    <script>
+      var menu_toggle = document.querySelector('.menu_toggle');
+      var menu = document.querySelector('.menu');
+      var nav = document.querySelector('nav');
+      var menu_toggle_span = document.querySelector('.menu_toggle span');
+    
+      menu_toggle.onclick = function() {
+        menu_toggle.classList.toggle('active');
+        menu_toggle_span.classList.toggle('active');
+        nav.classList.toggle('nav_responsive');
+        menu.classList.toggle('responsive');
+      }
+    </script>
   </body>
 </html>

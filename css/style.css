@@ -35,6 +35,10 @@ header{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+header .menu_toggle{
+    display: none;
+}
+
 header .logo{
     color: red;
     font-size: 25px;
@@ -141,7 +145,7 @@ header button{
     font-size: 25px;
 }
 
-.section_title:before {
+.section_title::before {
     position: absolute;
     left: 10px;
     bottom: 0;
@@ -431,8 +435,73 @@ footer i{
 }
 
 @media (max-width: 640px) {
-    header .menu {
+    header nav {
         display: none;
+    }
+    header .menu_toggle{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    header .menu_toggle span {
+        width: 35px;
+        background-color: red;
+        height: 5px;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+    header .menu_toggle span.active {
+        width: 0;
+    }
+    header .menu_toggle::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        background-color: red;
+        height: 5px;
+        transform: translateY(10px);
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    header .menu_toggle.active::before {
+        width: 28px;
+        transform: rotate(45deg);
+    }
+    header .menu_toggle::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        background-color: red;
+        height: 5px;
+        transform: translateY(-10px);
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    header .menu_toggle.active::after {
+        width: 28px;
+        transform: rotate(-45deg);
+    }
+    header nav.nav_responsive{
+        display: block;
+    }
+    header .menu.responsive{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 2;
+        background-color: white;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
     }
 }
 
