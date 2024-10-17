@@ -110,6 +110,7 @@ header button{
     font-size:  14px;
     color: white;
     transition: 0.5s;
+    border-radius: 6px;
 }
 
 #home .left a:hover{
@@ -163,14 +164,15 @@ header button{
 }
 
 .images {
+    width: 100%;
     margin: 100px auto;
     padding: 0 8%;
 }
 
 .images ul {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
     width: 100%;
 }
 
@@ -181,7 +183,7 @@ header button{
     margin: 10px;
     transition: 0.5s;
     height: 300px;
-    width: 340px;
+    width: 100%;
 }
 
 .images .car div{
@@ -236,6 +238,7 @@ header button{
 .service {
     text-align: center;
     width: 25%;
+    min-width: 280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -379,4 +382,62 @@ footer i{
 
 ::-webkit-scrollbar-thumb {
     background-color: red;
+}
+
+/** Responsive **/
+@media (max-width: 1300px) {
+    .images ul {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width: 940px) {
+    .images ul {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 720px) {
+    #home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #home .left {
+        width: 100%;
+    }
+    #home .right {
+        width: 70%;
+        min-width: 350px;
+    }
+    .images ul {
+        grid-template-columns: auto;
+    }
+    .localisation_contact_div {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .localisation {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .localisation_contact_div .form_contact {
+        width: 100%;
+    }
+
+    .localisation_contact_div .form_contact form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    header .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    header, #home, #services, #contact {
+        padding: 0 10px;
+    }
 }
