@@ -75,7 +75,7 @@ header button{
     border-radius: 10px;
 }
 
-.home{ 
+#home{ 
     margin-top:  50px;
     height: 500px;
     padding: 0 8%;
@@ -85,26 +85,26 @@ header button{
     position: relative;
 }
 
-.home .left{
+#home .left{
     width: 40%;
 }
 
-.home .left h1{
+#home .left h1{
     font-size: 35px;
     margin-bottom: 10px;
 }
 
-.home .left h1 span {
+#home .left h1 span {
     color: red
 }
 
-.home .left p {
+#home .left p {
     margin-bottom: 30px;
     color: gray;
     font-size: 13px;
 }
 
-.home .left a {
+#home .left a {
     background-color: red;
     padding: 10px 20px;
     font-size:  14px;
@@ -112,18 +112,18 @@ header button{
     transition: 0.5s;
 }
 
-.home .left a:hover{
+#home .left a:hover{
     background-color: black;
 }
 
-.home .right{
+#home .right{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.home .right img{
+#home .right img{
     width: 100%;
 }
 
@@ -284,6 +284,92 @@ header button{
     color: white;;
 }
 
+#contact {
+    min-height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 12%;
+}
+
+.localisation_contact_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 0;
+    height: 80%;
+}
+
+.localisation {
+    width: 49%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.localisation iframe {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.localisation_contact_div .form_contact {
+    width: 49%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.localisation_contact_div h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.localisation_contact_div .form_contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.localisation_contact_div .form_contact form input, .localisation_contact_div .form_contact form textarea{
+    border: 1px solid gray;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    resize: none;
+
+}
+
+.localisation_contact_div .form_contact form input[type="submit"]{
+    margin-bottom: 0;
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+footer{
+    background-color: red;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer i{
+    color: white;
+    margin: 10px 10px 0px 10px;
+    font-size: 18px;
+}
 
 /** Scrollbar CSS **/
 ::-webkit-scrollbar {
